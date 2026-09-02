@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-pink: #f43f5e;
+  --brand-rose: #fb7185;
+  --brand-cream: #fff7ed;
+  --brand-amber: #fbbf24;
+  --brand-slate: #1f2937;
+}
+
+* {
+  @apply box-border;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply bg-gradient-to-br from-rose-50 via-orange-50 to-amber-50 text-slate-900;
+}
+
+#root {
+  @apply min-h-screen;
+}
+
+::-webkit-scrollbar {
+  @apply h-2 w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-rose-50;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-pink-200 hover:bg-pink-300;
+}
